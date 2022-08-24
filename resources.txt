@@ -1,0 +1,13 @@
+https://www.bigocheatsheet.com/
+https://pythontutor.com/visualize.html#mode=edit
+
+
+stacks, queues, linked lists: https://docs.google.com/presentation/d/127F6bTdTo-MafNbIvLQBxlTKNHbr5-sNtnCXEjzoJCY/edit#slide=id.p33
+trees, graphs: https://docs.google.com/presentation/d/1tFloPuBix5sZA1goJ4SAmM_Wac50P4ecgPQWi9oa8CM/edit#slide=id.p1
+object oriented design: https://docs.google.com/presentation/d/1vUmALu9MTwmrXI-x0peFxVhTd46vs7-uFHme2e5RUhI/edit#slide=id.p1
+recursion and dynamic programming: https://docs.google.com/presentation/d/1Ar8HjIzCQB9UnOn1ZXg5TDm9U4YLymqgzC2T42RnCmY/edit#slide=id.p1
+
+
+Github
+https://github.com/FullstackAcademy/2206-FSA-RM-WEB-FT/blob/main/03-senior-phase/github-branches-and-orgs/git-workflow.md
+https://github.com/FullstackAcademy/2206-FSA-RM-WEB-FT/blob/main/03-senior-phase/github-branches-and-orgs/github-orgs.pdf
