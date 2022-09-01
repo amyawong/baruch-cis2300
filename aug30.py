@@ -26,3 +26,21 @@
 # 49 => 4*10 + 9*1
 # 178 => 1*100 + 7*10 + 1*8
 # 5780 => 5*1000 + 7*100 + 8*10 + 0*1 => 5*10^3 + 7*10^2 + 7*10^1 + 0*10^0
+
+
+
+# Videos sent out in email
+# ASCII Table:
+# https://www.youtube.com/watch?v=zB85kTs-sEw
+
+# Truth Tables:
+# https://www.youtube.com/watch?v=VCEYeB3bRW0
+
+# Binary Number System:
+
+# https://www.youtube.com/watch?v=LpuPe81bc2w [overview]
+# https://www.youtube.com/watch?v=kTcpd4ef2lU [detailed]
+
+# Interpreter vs Compiler and High Level vs Low Level:
+# https://www.youtube.com/watch?v=1OukpDfsuXE
+# https://www.youtube.com/watch?v=e4ax90XmUBc
