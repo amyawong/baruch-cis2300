@@ -24,6 +24,6 @@ convert_F_to_C(100)
   # console.log(getMaxOfThree(843, 1932, 4905)) // 4905
   
 # In Python:
-def get_greatest_of_three(num1, num2, num3):
+def get_max_of_three(num1, num2, num3):
   print(max(num1, num2, num3))
-get_greatest_of_three(5, 9, 3)
+get_max_of_three(5, 9, 3)

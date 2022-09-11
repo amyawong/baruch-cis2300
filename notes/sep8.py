@@ -7,27 +7,27 @@ print("Hello World")
 
 # PROMPT: Summing up the numbers from 1-50
 # in JavaScript:
-# const addAllNums = num => {
+# const addAllNumbers = num => {
 #   let sum = 0;
 #   for (let i = 1; i <= num; i++) {
 #     sum += i
 #   }
 #   return sum
 # }
-# console.log(addAllNums(50)) // 1275
+# console.log(addAllNumbers(50)) // 1275
 
 # in Python:
-def addNumbers(number):
+def add_all_numbers(number):
     sum = 0
-    for x in number:
+    for x in range(number + 1):
         sum += x
     print(sum)
-
+add_all_numbers(50)
 
 
 # PROMPT: Counting numbers from 1-50 that are divisible by 10
 # in JavaScript:
-# const numsDivisibleBy10 = num => {
+# const numbersDivisibleBy10 = num => {
 #   let total = 0;
 #   for (let i = 1; i <= num; i++) {
 #     if (i % 10 === 0) {
@@ -36,13 +36,13 @@ def addNumbers(number):
 #   }
 #   return total
 # }
-# console.log(numsDivisibleBy10(50)) // 5
+# console.log(numbersDivisibleBy10(50)) // 5
 
 # in Python:
-def numbersDivisibleBy10(number):
-  sum = 0
+def numbers_divisible_by_10(number):
+  total = 0
   for x in range(number):
     if x % 10 == 0:
-      sum += 1
-  print(sum)
-numbersDivisibleBy10(50)
+      total += 1
+  print(total)
+numbers_divisible_by_10(50)

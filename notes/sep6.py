@@ -1,6 +1,6 @@
 # PROMPT: print the bigger number out of two numbers
 # in Javascript
-# const biggerNum = (a, b) => {
+# const biggerNumber = (a, b) => {
 #   if (a === b) {
 #    return "both numbers are equal to each other"
 #   } else if (a > b) {
@@ -9,8 +9,8 @@
 #    return b
 #   }
 # }
-# console.log(biggerNum(5, 8))
-# console.log(biggerNum(15, 15))
+# console.log(biggerNumber(5, 8))
+# console.log(biggerNumber(15, 15))
 
 # in Python (method 1)
 def bigger_number_v1(num1, num2): 
@@ -73,7 +73,7 @@ get_max_v1(67, 67, 67)
 
 # in Python (method 2 (easier and faster))
 def get_max_v2(num1, num2, num3):
- print (max(num, num2, num3))
+ print (max(num1, num2, num3))
 get_max_v2(3, 5, 1)
 get_max_v2(98, 98, 48)
 
