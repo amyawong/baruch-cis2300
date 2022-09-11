@@ -6,6 +6,7 @@
   # }
   # console.log(fahrenheitToCelsius(100)) // 37.77...
   # console.log(fahrenheitToCelsius(120)) // 48.88...
+
 # In Python:
 def convert_F_to_C(temp):
   print((temp - 32) * (5 / 9))
@@ -21,6 +22,7 @@ convert_F_to_C(100)
   # }
   # console.log(getMaxOfThree(5, 8, 3)) // 8
   # console.log(getMaxOfThree(843, 1932, 4905)) // 4905
+  
 # In Python:
 def get_greatest_of_three(num1, num2, num3):
   print(max(num1, num2, num3))
