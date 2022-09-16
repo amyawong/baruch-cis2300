@@ -15,20 +15,21 @@ world = 45.56
 World = 17
 WORLD = 7
 wor1D = 78909
-# all these variables have different values
+# all these variables have different values even though they contain the same letters
+# stick with following snake_case for python variables
 print(world, World, WORLD, wor1D) # <-- prints 45.56 17 7 78909
 
 # Variable names can NOT be named after built-in values
 True = 45.56 # <-- this does NOT work
 True_ = 45.56 # <-- this is okay
-# another example is print = 10 (even though it works, it is BAD PRACTICE)
+# another example is print = 10 (even though it works, it is BAD PRACTICE so dont do it!)
 
 # Variable names can NOT start with numbers
 list_of_50_states = "NY, NJ, CA..." # <-- valid variable name
 50states = "NY, NJ, CA..." # <-- INVALID variable name (because it starts with a number)
 
 
-# to get the type of a variable, put variable in type function
+# to get the type of a variable, put variable in type and print functions as so:
 print(type(list_of_50_states)) # prints <class 'str'>
 
 # values of variables can be redeclared (meaning that variables can be reused and the old value of variable is overwritten with the new value)
@@ -92,14 +93,14 @@ print(S) # <-- prints "1000.5"
 print(type(S)) # <-- prints <class 'str'>
 
 
-# single assignments
+# single assignments of variables
 a = 1
 b = 2
 c = 3
 d = 4
 print(a, b, c, d) # <-- prints 1 2 3 4
 
-# multiple assignments (same as above, just less lines)
+# multiple assignments of variables (same as above, just less lines)
 a, b, c, d = 1, 2, 3, 4
 print(a, b, c, d) # <-- prints 1 2 3 4
 
