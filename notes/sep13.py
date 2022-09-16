@@ -14,10 +14,15 @@
 # is a string (str) literal
 # rule is that if you start with a double quote, you have to end with a double quote and vice versa for single quotes
 
+True
+False
+# both True and False are boolean literals and do NOT start with a lowercase letter
+
 # literals can be contained in a memory container called a variable
 number_of_apples = 10
 # variables use snake case, meaning that all letters are lowercase and each word is connected wirh an underscore
 # this variable is holding an integer value (int) 10
+# names of variables can NOT begin with a number
 
 # camel case (commonly used in JavaScript): 
 numberOfApples = 10
