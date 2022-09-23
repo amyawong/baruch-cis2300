@@ -1,3 +1,6 @@
+"""
+# INCOMPLETE
+
 if passing_signal == "RED"
 
 # WRONG way
@@ -9,6 +12,7 @@ else:
 
 #  more concise way: 
 
+"""
 
 
 
@@ -21,19 +25,21 @@ gpa = 2.7
 sat = 1250
 is_accepted = False # whenever you have boolean values, it is customary to name variable is_ followed by what is checked
 
-if gp > 2.5 or sat > 1150:
+if gpa > 2.5 or sat > 1150:
     is_accepted = True
 else: # it would be redundant to add this else because is_accepted is already set to False
     is_accepted = False
 
-# INCORRECT approach (using and)
-if gp > 2.5 and sat > 1150:
+# INCORRECT approach (using and; we only want to check one criteria for this scenario)
+"""
+if gpa > 2.5 and sat > 1150:
     is_accepted = True
-else: # it would be redundant to add this else because is_accepted is already set to False
+else: # it would be redundant to add this else because is_accepted is already set to False as the default value
     is_accepted = False
+"""
 
 print(f'gpa = {gpa}, sat = {sat}, accepted = {is_accepted}') # uses a template literal
-print('gpa = ', gpa, 'sat = ', sat, 'accepted = ', is_accepted) # same as print statement above but without literal
+print('gpa =', gpa, ',', 'sat =', sat, ',', 'accepted =', is_accepted) # same as print statement above but without literal
 
 
 # Scenario: college admissions checking for different criteria
@@ -61,6 +67,9 @@ if gpa > 2.0 or sat > 800: # with or expressions, if the first condition (gpa > 
 
 
 # For loops
+# save you the trouble of a repetitive task
+
+# For loops in range():
 # first argument is the starting condition
 # second argument is ending condition that is exclusive to the for loop
 # third argument is the incrementer
@@ -86,7 +95,23 @@ for z in range(0, 100, 10):
 
 for x in range(99, 0, -1):
     print(f'{x} bottles of beer on the wall, {x} bottles of beer,')
-    print(f'Take one down and pass it around, {x - 1} bottles of beear on the wall\n')
+    print(f'Take one down and pass it around, {x - 1} bottles of beer on the wall\n')
     # --> prints the lyrics of the 99 bottles of beer on the wall but with grammatical errors towards the end of the song and doesn't include last line of song
 
+
 # HOMEWORK: fix loop above to match lyrics in 99 bottles of beer on the wall
+for x in range(99, 0, -1):
+  if x <= 99 and x > 2:  
+  # can also do: 
+  # if x <= 99 and x >= 3:
+    print(f'{x} bottles of beer on the wall, {x} bottles of beer,')
+    print(f'Take one down and pass it around, {x - 1} bottles of beer on the wall\n')
+  elif x == 2:
+    print(f'{x} bottles of beer on the wall, {x} bottles of beer,')
+    print(f'Take one down and pass it around, {x - 1} bottle of beer on the wall\n')
+  elif x == 1:
+    print(f'{x} bottle of beer on the wall, {x} bottle of beer,')
+    print('Take one down and pass it around, no more bottles of beer on the wall\n')
+
+print('No more bottles of beer on the wall, no more bottles of beer')
+print('Go to the store and buy some more, 99 bottles of beer on the wall')

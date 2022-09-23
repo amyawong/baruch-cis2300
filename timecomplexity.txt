@@ -1,0 +1,81 @@
+O(1) — Constant Time: it only takes a single step for the algorithm to accomplish the task.
+A common example is algorithms that return an element from an already-known position of an array, as accessing an array by index does not depend on the array length.1
+
+Example code:
+const getLast = (items) => {
+   return items[items.length-1]; 
+};
+
+It doesn't matter how many items you have in the provided array, the operation is always done in one step. Try running the functions with different inputs...
+
+
+
+O(log n) — Logarithmic Time: The number of steps it takes to accomplish a task are decreased by some factor with each step.
+In mathematics, the logarithm is the inverse operation to exponentiation, just as division is the inverse of multiplication. Thus, logarithmic time complexity means that you decrease the amount of work you have to do (roughly by half) with each step.
+You decrease the amount of work you have to do with each step
+
+Example code: 
+function thisOld(num, array){
+  let midPoint = Math.floor( array.length / 2 );
+  if( array[midPoint] === num) {
+    return true;
+  } else if( array.length <= 1  ) {
+    return false;
+  } else if( array[midPoint] > num) {
+    return thisOld(num, array.slice(0, midPoint));
+  } else if( array[midPoint] < num ) {
+    return thisOld(num, array.slice(midPoint));
+  }
+}
+
+// Example case:
+const sortedAges = [15, 20, 29, 35, 40];
+thisOld(29, sortedAges) // returns true
+
+Notes:
+ * This solution works because our Array is sorted.
+ * Recursive solutions are often logarithmic
+
+
+
+O(n) — Linear Time: The number of of steps required are directly related (1 to 1).
+In Linear time, the worst case time (iterations) grows on par with the number of items.
+In other words, for N elements we will require up to a multiple of N steps.
+
+Example code: 
+const findIndex = (items, match) => {
+   for (let i=0, total=items.length; i < total; i++)
+      if (items[i] == match)
+         return i;
+   return -1;
+};
+
+Example cases:
+const array = ["a","b","c","d"];
+
+console.log(findIndex(array,"a")); // 0  (1 iteration - best case)
+console.log(findIndex(array,"d")); // 3  (4 iterations - worst case)
+console.log(findIndex(array,"e")); // -1 (4 iterations - worst case)
+
+
+
+O(n²) — Quadratic Time: The number of steps it takes to accomplish a task is square of n.
+In this case, the worst case time (iterations) is the square of the number of inputs. The time grows exponentially related to the number of inputs.
+
+Example code:
+const buildSquareMatrix = (items) => {
+   let matrix= [];
+   for (let i=0, total=items.length; i < total; i++){ 
+      matrix[i] = [];
+      for (let j=0, total=items.length; j < total; j++)
+         matrix[i].push(items[j]);
+   }
+   return matrix;
+};
+
+buildSquareMatrix(["a","b","c"]);
+// [
+//   ["a","b","c"],
+//   ["a","b","c"],
+//   ["a","b","c"]
+// ] (9 iterations for 3 elements)
