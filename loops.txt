@@ -1,0 +1,22 @@
+Possible use cases for a for loop
+---------------------------------
+- used often if you're iterating over a fixed length
+- can be useful if you want to iterate sequentially, or in intervals, because you can set that up in the beginning
+
+for loops (in Javascript but same idea):
+https://github.com/hpr/2108-FSA-RM-BCP-MO-B/blob/main/02-loops-and-debugging/B-for-loop.js
+
+
+
+Possible use cases for a while loop
+-----------------------------------
+- used often if all you want to keep track of is whether a specific condition is true
+- used often when you don't know how many iterations something will take
+
+initializer = ___
+while conditional:
+  # block of code
+# the block of code will run over and over as long as the conditional expression evaluates to true
+
+while loops (in Javascript but same idea):
+https://github.com/hpr/2108-FSA-RM-BCP-MO-B/blob/main/02-loops-and-debugging/A-while-loop.js
