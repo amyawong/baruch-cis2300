@@ -8,7 +8,7 @@
 # - do NOT return any values
 def hello():
     tmp = "Hi, how are you?s
-    
+
     print(tmp)
 
 # all functions HAVE to be defined before they can be invoked
@@ -125,15 +125,51 @@ def countdown(n):
 print(countdown(10))   # prints: 10 9 8 7 6 5 4 3 2 1
 
 
+def countdown_recursive(n):
+    # base case:
+    if n == 1:
+        print(n)
 
-def factorial(n):
+    # recursive case:
+    else:
+        print(n)
+        print(countdown(n - 1))
+
+print(countdown_recursive(10))      # prints: 10 9 8 7 6 5 4 3 2 1
+
+
+
+def countdown_2(n):
+  if n >= 1:
+    for i in range(n, 0, -1):
+      print(i)
+  print('KABOOM!')
+
+print(countdown_2(10))    # prints: 10 9 8 7 6 5 4 3 2 1 KABOOM!
+
+
+def countdown_2_recursive(n):
+    # base case:
+    if n == 0:
+        print('KABOOM!')
+
+    # recursive case:
+    else:
+        print(n)
+        return(countdown(n - 1))
+
+print(countdown_2_recursive(10))    # prints: 10 9 8 7 6 5 4 3 2 1 KABOOM!
+
+
+
+def factorial_1(n):
     result = 1
     for i in range(n, 0, -1):
         result *= i     # same as result = result * i
 
     return result
-print(factorial(1))     # prints: 1
-print(factorial(5))     # prints: 120
+print(factorial_1(1))     # prints: 1
+print(factorial_1(5))     # prints: 120
 
 
 
