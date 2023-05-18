@@ -1,11 +1,12 @@
 # Method 1
 list = [1, 2, 3, 'a', 'b', 'c']
-my_list = list.reverse()
-print(my_list)
+list.reverse()
+print(list)
 
 
 
 # Method 2
+list = [1, 2, 3, 'a', 'b', 'c']
 def reverse_list_2(list):
     output = []
     for i in range(len(list) - 1, -1, -1):
@@ -17,17 +18,16 @@ print(reverse_list_2(list))
 
 
 # Method 3
-
 def reverse_list_3(list):
     for i in range(0, len(list)):
         # swap list[i] with list[len(list) - 1 - i]
         temp = list[i]
         # print(list[len(list) - 1 - i])
-        # list[i] = list[len(list) - 1 - i]
-        # list[len(list) - 1 - i] = temp
+        list[i] = list[len(list) - 1 - i]
+        list[len(list) - 1 - i] = temp
     return list
 
-print(reverse_list_3(list))
+# print(reverse_list_3(list))
 
 
 
@@ -39,4 +39,4 @@ def reverse_list_4(list):
         out.append(list.pop())
     return out
 
-print(reverse_list_4(list))
+# print(reverse_list_4(list))
